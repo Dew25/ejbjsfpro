@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Registration
+            </ui:define>
+
+            <ui:define name="left">
+                <aside class="leftAside">
+                    <h2>Что нужно для регистрации</h2>
+                    <p>Что бы регистрация прошла успешно, заполните все поля и нажмите на
+                        кнопку "Зарегистрироваться"
+                    </p>
+                </aside>
+            </ui:define>
+
+            <ui:define name="content">
+                <section>
+                    <article>
+                        <h1>Регистрация</h1>
+                        <div class="text-article">
+                            <form method="POST" action="registration">
+                                <p>
+                                    <label for="login">Логин</label>
+                                    <input type="text" name="login" id="login"/>
+                                </p>
+                                <p>
+                                    <label for="email">E-Mail</label>
+                                    <input type="email" name="email" id="email"/>
+                                </p>
+                                <p>
+                                    <label for="password">Пароль</label>
+                                    <input type="password" name="password" id="password"/>
+
+                                    <label for="password2">Повторите пароль</label>
+                                    <input type="password" name="password2" id="password2"/>
+                                </p>
+                                <p>
+                                    <button type="submit">Зарегистрироваться</button>
+                                </p>
+                            </form>
+                        </div>
+                    </article>
+                </section>
+            </ui:define>
+
+            
+
+        </ui:composition>
+
+    </body>
+</html>
